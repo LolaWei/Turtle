@@ -1,11 +1,11 @@
 # 递归方法绘制分形八边形
-> 我借鉴的网上画分形五边形的代码
+> 我借鉴的网上画**星星**的代码
 
->画出来之后发现有一点像玫瑰花心
+>画出来之后发现有一点像**玫瑰花心**
 
 ## 代码如下所示
-  import turtle as t
-def draw_octagon(size):
+    import turtle as t
+    def draw_octagon(size):
     count=0
     while count<=8:
         t.forward(size)
@@ -15,23 +15,23 @@ def draw_octagon(size):
         size+=50
         draw_octagon(size)
 
-def write_characters(s):
-    t.penup()
-    t.goto(100,-200)
-    t.pendown()
-    t.color("pink")
-    t.write(s,font=("arial",20,"bold"))
+    def write_characters(s):
+      t.penup()
+      t.goto(100,-200)
+      t.pendown()
+      t.color("pink")
+      t.write(s,font=("arial",20,"bold"))
 
-def main():
-    t.penup()
-    t.left(270)
-    t.forward(100)
-    t.pendown()
-    t.pensize(25)
-    t.color("pink")
-    draw_octagon(60)
-    write_characters("看起来好像一朵玫瑰花！")
-    t.done()
+    def main():
+      t.penup()
+      t.left(270)
+      t.forward(100)
+      t.pendown()
+      t.pensize(25)
+      t.color("pink")
+      draw_octagon(60)
+      write_characters("看起来好像一朵玫瑰花！")
+      t.done()
 
-if __name__=="__main__":
-    main()
+    if __name__=="__main__":
+      main()
